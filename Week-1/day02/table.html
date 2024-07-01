@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table in html</h1>
+    <table>
+        <caption>Avengers Team Marks</caption>
+        <colgroup>
+            <col style="background-color: blueviolet;">
+            <col span = "2" style="background-color: chocolate;">
+            <col style="background-color: aquamarine;">
+            <col style="background-color: chartreuse;">
+        </colgroup>
+        
+<!-- every table is going to have only one header and one footer -->
+        <thead style="background-color: red;">
+            <tr>
+                <th>Name</th>
+                <th>UID</th>
+                <th>Course Name</th>
+                <th>Marks</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+
+        <tfoot style="background-color: aqua;">
+            <tr>
+                <td colspan="3">Total Marks</td>
+                <td>597</td>
+            </tr>
+        </tfoot>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Amount</td>
+                <td>597</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>Peter parker</td>
+                <td>48</td>
+                <td>spiderman</td>
+                <td>100</td>
+                <td>spiderman@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Batman</td>
+                <td>28</td>
+                <td>Save the city</td>
+                <td>99</td>
+                <td>batman@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Tony stark</td>
+                <td>18</td>
+                <td>ironman</td>
+                <td>100</td>
+                <td>ironman@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Stephan strange</td>
+                <td>38</td>
+                <td>sorcerer</td>
+                <td rowspan="2">99</td>
+                <td>drstrange@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>DR.Banner</td>
+                <td>19</td>
+                <td>hulk</td>
+                <!-- <td>99</td> -->
+                <td>hulk@gmail.com</td>
+            </tr>
+    
+            <tr>
+                <td>Thor Odinson</td>
+                <td>18</td>
+                <td>God of thunder</td>
+                <td>100</td>
+                <td>thor@gmail.com</td>
+            </tr>
+        </tbody>
+        
+        
+        
+        
+    </table>
+</body>
+</html>

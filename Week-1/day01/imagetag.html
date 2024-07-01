@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Tag</title>
+    <link rel="shortcut icon" href="icon3.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- if the 1st image is not loaded then with the help of onerror attribute we can print the second image -->
+    &nbsp;&nbsp;&nbsp;<img src="team2.jpg" onerror="this.onerror=null;this.src='team1.jpg'" alt="Team India" height="200px" width="300px">
+</body>
+</html>
