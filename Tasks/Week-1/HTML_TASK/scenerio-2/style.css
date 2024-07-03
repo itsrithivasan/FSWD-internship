@@ -1,0 +1,56 @@
+#header{
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 10px;
+    font-size: 50px;
+
+}
+
+#cata{
+    background-color: rgb(188, 147, 223);
+    padding: 10px;
+    text-align: center;
+}
+
+#main{
+    margin: auto;
+}
+
+.vp{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.values{
+    padding: 10px;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: #3d52a0;
+    font-weight: 600;
+}
+
+table{ margin: 0;
+    width: 1700px;
+   
+}
+
+body{
+    background-color: rgb(222, 189, 246);
+    margin: 0;
+   
+}
+a:hover{
+    text-decoration: underline;
+    color: #3d52a0;
+}
+
+td{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1;
+}
