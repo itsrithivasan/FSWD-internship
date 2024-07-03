@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* absolute is top to bottom so blue comes first */
+            position: absolute;
+        }
+        .card1{
+            width: 500px;
+            height: 300px;
+            background-color: lightgreen;
+            /* z-index is highest number comes first */
+            z-index: -3;
+        }
+        .card2{
+            width: 400px;
+            height: 500px;
+            background-color: lightcoral;
+            z-index: -2;
+        }
+        .card3{
+            width: 200px;
+            height: 600px;
+            background-color: lightblue;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Z-Index</h1>
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="card3"></div>
+
+</body>
+</html>
