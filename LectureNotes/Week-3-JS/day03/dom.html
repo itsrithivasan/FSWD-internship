@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM in js</h1>
+    <p id="demo"></p>
+    <input type="text" id="data1">
+    <button onclick=""></button>
+    <script>
+        let demo = document.getElementById('demo');
+        let para = document.createElement('p');
+        para.innerHTML="Hello Students";
+        demo.appendChild(para)
+        function details(){
+            let data1 = document.getElementById('data1').value;
+            console.log(data1);
+        }
+    </script>
+</body>
+</html>
