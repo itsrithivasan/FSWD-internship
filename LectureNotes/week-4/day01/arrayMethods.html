@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods in JS</h1>
+    <p id="demo"></p>
+    <script>
+        let cricle = [10,20,30];
+        // let areas = [];
+        // let area = 0;
+        // for(let i=0; i < cricle.length ;i++){
+        //     // document.getElementById('demo').innerHTML=3.14*cricle[i]*cricle[i];    
+        //     area = 3.14 * cricle[i] * cricle[i];
+        //     areas.push(area);
+        // }
+        // document.getElementById('demo').innerHTML=areas;    
+        
+        // let map1=performance.now();
+        // let areas = cricle.map((radius)=>{
+        //     return 3.14*radius*radius;
+        // })
+        // document.getElementById('demo').innerHTML=areas;
+
+        // let map2=performance.now();
+        // console.log("Map", map2-map1);
+        // document.getElementById('demo').innerHTML=areas;
+
+
+        // let foreach1 = performance.now();
+        // cricle.forEach((radius)=>{
+        //     let area = 3.14*radius*radius;
+        //     console.log(area);
+        // })
+
+        // let foreach2 = performance.now();
+        // console.log(foreach2-foreach1);
+
+        let marks = [90,89,67,45,92,95];
+
+        let range = marks.filter((e)=>{
+            return e>90
+        })
+        document.getElementById('demo').innerHTML=range;
+    </script>
+</body>
+</html>
