@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: aqua;
+            gap: 10px;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'sidebar sidebar section section';
+            height: 100vh;
+        }
+
+        .header{
+            grid-area:navbar;
+            height: 100px;
+        }
+
+        .section{
+            grid-area: section;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+
+        .griddemo{
+            border: 5px solid black;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header griddemo">
+            Home About Contact Us
+        </div>
+        <div class="section griddemo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iure sint labore minima, amet dolores velit vel a fugiat sunt? Accusamus, esse officia! Ut voluptas expedita accusantium impedit odio quos.</div>
+        <div class="sidebar griddemo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum, iure ducimus numquam tempore doloremque voluptas? Nam excepturi obcaecati nesciunt iste rerum aspernatur, corporis enim placeat repudiandae, itaque in tenetur.</div>
+    </div>
+</body>
+</html>

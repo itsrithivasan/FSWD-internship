@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Food which are best for you</h1>
+    <ul id="list"></ul>
+    <script>
+        const list = document.getElementById('list');
+
+
+        fetch('https://api.npoint.io/9045c260b1565daa9e15')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                data.forEach((food) => {
+                    let liData = document.createElement('li');
+                    console.log(liData);
+                    liData.innerHTML = `
+            <h1>${food.name}</h1>
+            <img src=${food.image} alt=${food.name}/>
+            <p>${food.importance}</p>
+            <p>${food.best_time_to_intake}</p>
+        `
+                    list.appendChild(liData)
+                });
+            })
+            .catch((e) => console.log(e))
+    </script>
+</body>
+
+</html>
